@@ -1,32 +1,35 @@
 import React from 'react'
-const videoUrl = "https://www.youtube.com/watch?v=aqz-KE-bpKQ";
-const videoId = videoUrl.substring(videoUrl.indexOf("=") + 1);
-console.log(videoId);
-const getYouTubeTranscript = async (videoId) => {
-    const url = "https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=" + videoId;
-    const response = await fetch(url);
-    if (response.status === 200) {
-        const data = await response.json();
-        const transcript = data["items"][0]["contentDetails"]["transcript"];
-        return transcript;
-    } else {
-        return null;
-    }
-};
-
+import axios from 'axios'
 
 function Transcript() {
-    const handelSubmit = async () => {
-        const transcript = await getYouTubeTranscript(videoId);
-        console.log(transcript);
+    const handleSubmit = async () => {
+        const options = {
+            method: 'GET',
+            url: 'https://youtube-subtitles-captions-downloader.p.rapidapi.com/ytmp3/ytmp3/subtitles/',
+            params: {
+                url: 'https://www.youtube.com/watch?v=UJeSWbR6W04'
+            },
+            headers: {
+                'X-RapidAPI-Key': '4335290962msha7a7b91d666684bp1652ccjsnf92e4eee5a05',
+                'X-RapidAPI-Host': 'youtube-subtitles-captions-downloader.p.rapidapi.com'
+            }
+        };
+
+        try {
+            const response = await axios.request(options);
+            console.log(response.data);
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     return (
-
         <div>
-            <button onClick={handelSubmit}>CLick me !!</button>
+            <button onClick={handleSubmit}>Click to summarize </button>
         </div>
     )
 }
 
 export default Transcript
+
+
