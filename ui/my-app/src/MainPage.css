@@ -1,0 +1,237 @@
+
+.insightfultube {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: inherit;
+  text-align: initial;
+  color: inherit;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+}
+
+.chooseAnalysisType
+{
+    margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  text-align: initial;
+  color: inherit;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+/* .chooseAnalysisType {
+  top: 1125px;
+  font-size: inherit;
+  display: flex;
+ 
+  text-align: initial;
+  width: 472px;
+  height: 58px;
+} */
+/* .input,
+.section {
+  position: absolute;
+  top: 1375px;
+  left: 343px;
+} */
+.inputField {
+   
+    color:white;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 16px;
+    /* border: 1px solid purple;  */
+    /* background-color: transparent; */
+    width: 100%;
+    border: none;
+    background-color: #443c68;
+  }
+
+/* .mainPage {
+
+  background-color: #635985;
+  /* width: 100%; */
+  /* height: 2787px;
+  overflow: hidden; */
+  /* text-align: left; */
+  /* font-size: 32px;
+  color: #fff;
+  font-family: "Roboto Mono";
+  margin: auto;
+width: 70%; */
+/* } */
+
+#div-main
+{
+   
+    width: 60%;
+    margin: auto;
+    background-color: #635985;
+    color: #fff;
+    font-family: "Roboto Mono";
+}
+
+*
+{
+    background-color: #635985;
+    font-family: "Roboto Mono";
+    box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+.button
+{
+    background-color: #443c68;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+.button:hover
+{
+    background-color: white;
+    color:#443c68;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+.buttonDiv
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.short-desc
+{
+    margin-top:30px;
+    background-color: #443c68;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.img
+{
+    margin: 10px;
+    background-color: #443c68;
+}
+.show-result
+{
+    background-color: #443c68;
+    padding: 10px;
+}
+.info
+{
+    margin-top: 30px;
+    background-color:#443c68;
+    padding: 20px
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Styling for the dropdown button */
+  .dropdown-button {
+    padding: 10px;
+   text-align: left;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    width: 182px;
+    font-size: 14px;
+    border: none;
+  
+  }
+  
+  /* Styling for the dropdown options */
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    color:#443c68;
+    
+  }
+  
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+  }
+  
+  /* Styling for the dropdown button */
+  .dropdown-button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  /* Styling for the dropdown options */
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  /* Styling for each dropdown option */
+  .dropdown-options option {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+  }
+  
+  /* Styling for the last dropdown option (no border-bottom) */
+  .dropdown-options option:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hide dropdown options by default */
+  .dropdown-options {
+    display: none;
+    width: 180px;
+  }
+  
+  /* Show dropdown options on hover */
+  .dropdown-options.show {
+    display: flex;
+    width: 180px;
+  }
+
+  .language-title
+  {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
