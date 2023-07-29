@@ -1,0 +1,150 @@
+.homePage {
+    position: relative;
+    background-color: #635985;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #fff;
+    font-family: "Roboto Mono";
+}
+
+.insightfultube {
+    margin: 0;
+    position: absolute;
+    top: 182px;
+    left: 314px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: inherit;
+    color: inherit;
+}
+
+.input,
+.section {
+    position: absolute;
+    top: 1375px;
+    font-size: 20px;
+    left: 343px;
+}
+
+.input {
+    background-color: #443C68;
+    top: 317px;
+    padding: 2.5rem 3rem;
+    left: 314px;
+    border: none;
+}
+
+.input::placeholder {
+    color: #a7a2a2;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+}
+
+.card1 {
+    top: 470px;
+    background-color: #393053;
+    border: none;
+    position: absolute;
+    width: 300px;
+    left: 314px;
+    height: 400px;
+}
+
+.card2 {
+    top: 470px;
+    background-color: #393053;
+    border: none;
+    position: absolute;
+    width: 600px;
+    left: 664px;
+    height: 400px;
+}
+
+.card3 {
+    top: 470px;
+    background-color: #393053;
+    border: none;
+    position: absolute;
+    width: 300px;
+    left: 1314px;
+    height: 400px;
+}
+
+#card1Img {
+    position: absolute;
+    left: 524px;
+    padding: 10px;
+}
+
+#card2Img {
+    position: fixed;
+    left: 524px;
+}
+
+#card3Img {
+    position: fixed;
+    left: 524px;
+}
+
+.cardtxt1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: Roboto Mono;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.cardtxt1_1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 30px;
+    font-family: Roboto Mono;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.cardtxt2 {
+    color: white;
+    font-size: 36px;
+    font-family: Roboto Mono;
+    font-style: italic;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.cardtxt2_1 {
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 30px;
+    font-family: Roboto Mono;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.cardtxt3 {
+    color: white;
+    font-size: 36px;
+    font-family: Roboto Mono;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.cardtxt3_1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 30px;
+    font-family: Roboto Mono;
+    font-weight: 400;
+    word-wrap: break-word
+}
