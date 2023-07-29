@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 function Summarizer({ transcript }) {
-    const [summary, setSummary] = useState([]);
+    const [summary, setSummary] = useState();
     const handleSubmit = async () => {
         const options = {
             method: 'POST',

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import Summarizer from './Summarizer';
+import Translate from './Translate';
+import Output from './Output';
 
 function Transcript() {
     const [transcript, setTranscript] = useState([])
@@ -32,6 +34,7 @@ function Transcript() {
             <button onClick={handleSubmit}> Transcript </button>
             {transcript}
             <Summarizer transcript={transcript} />
+            <Output transcript={transcript} />
         </div>
     )
 }
