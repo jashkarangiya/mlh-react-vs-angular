@@ -1,0 +1,43 @@
+// Edit this One AI API call using our studio at https://studio.oneai.com/?pipeline=dt34Ao&share=true
+
+const axios = require("axios");
+
+const apiKey = "6d42828b-7b8a-46b5-9b89-a93b1764e799";
+
+const config = {
+    method: "POST",
+    url: "https://api.oneai.com/api/v0/pipeline",
+    headers: {
+        "api-key": apiKey,
+        "Content-Type": "application/json",
+    },
+    data: {
+        input: "welcome to Samsung Galaxy homepage and welcome to Seoul Korea the Galaxy Z flip 5's all new design introduces entirely new ways to express yourself it comes with the largest cover screen on a Galaxy Z flip yet combine that with an enhanced powerful processor and nitography Galaxy Z flip 5 completely changes how we capture our memories it's a whole new era for selfies zoom in or out to snap the perfect portrait [Music] or select it for an aspect ratios and settings to capture memorable group selfies all straight from the cover screen [Music] you can also capture amazing videos even on the go because with super study the footage is stable and smooth I'm sure everyone has had that experience stretching their arm out as far as possible to get a group shot with z-flip 5 I can just set my phone down and the camera will automatically shift from wide to an ultra wide angle so everyone stays in the frame the all-new design of the Galaxy Z flip 5 goes beyond the physical design we've also made it more familiar and intuitive to use a quick swipe up gives you quick access to your credit cards QR codes IDs and more on Samsung wallet you can also check your tickets or boarding pass at a glance and just like our galaxy watch you can swipe down for quick settings write for notifications and left for all of your favorite widgets from weather to Samsung health game snacks and even Google Finance with a pinch of a screen quick tasks are easily within reach the flexible display is fundamental to the foldable experience and durability is crucial led by our team of designers and Engineers we set out to better protect the display by modifying it with a new shock dispersion layer this makes the main screen stronger and more resilient we also redesigned the hinge to feature a dual rail structure that excels in diffusing external impact and enhances stability and toughness these updates to the display and hinge strengthened our latest foldables all in a design that's sleeker and more streamlined than ever it's a technological breakthrough born out of our commitment to craftsmanship and it paves the way for the next phase in the evolution of our foldables introducing the Galaxy Z fold five building on a legacy of innovative design and craftsmanship it's been meticulously refined you'll notice the moment you pick it up we designed an integrated hinge with a pivot shaft that moves the wing plate to create a larger curvature and it reduces the folds Gap to almost nothing we call it the flex hinge the biggest challenge in redesigning the hinge was to ensure it was both durable and strong enough to support Flex mode since it was first introduced Flex mode has transformed the foldable landscape defining a new level of Versatility for the way you use your smartphone with a higher level of tension our new hinge can be adjusted with extreme Precision to get just the angle you want and even with all these advancements our new hinge still comes with an ipx8 rating for water resistance providing protection for our lightest most compact fold yet for the life maximizers in pursuit of productivity the Galaxy Z fold 5 offers an immersive large screen that fits in your pocket equipped with top tier performance for multitasking and gaming and Powerful camera capabilities it redefines versatility and for the free spirited style icons the Galaxy Z flip 5 is a pocket-sized Powerhouse for self-expression with a larger cover screen powerful AI camera and countless ways to personalize your experience whichever is the right fit for you they come with an ipx8 rating for water resistance both will be available starting August 11th in select countries the Galaxy Z fold 5 starts at 1799 dollars and the Galaxy Z flip 5 at 999 dollars we're making forming healthy habits easier than ever with Samsung health and our new Galaxy watch and it all starts with our Advanced sensors our proprietary powerful three-in-one bioactive sensor provides a comprehensive picture of your well-being by monitoring ECG blood pressure body composition along with heart rate these measures represent critical indicators of Health from your wrist and at your convenience and when used overnight the infrared temperature sensor can help users better manage their menstrual cycles your heart rate and Rhythm are key indicators for your overall health with a new Galaxy watch 6 series tracking your heart rate and getting real-time insights into the Total Wellness is effortless you'll get alerts If you experience a low or high heart rate while resting and you can gain a deeper insight into your cardiovascular health with a new irregular heart rhythm notification or ihrn it works with the existing Samsung health monitor to detect abnormal heart rhythms and potential atrial fibrillation which can be often asymptomatic and go undetected it comes in two sizes and signature colors giving you more ways to express yourself with numerous watch faces that you can customize to fit your daily outfit and even mood with multiple band options including Slimmer designs and the new one-click band it's easy to match your style and needs if you prefer a more Timeless look we're excited to announce that we're bringing back the Galaxy watch 6 classic with the new signature rotating bezel that classic fans love including me [Applause] [Music] the new rotating bezels are thinner and more refined bringing a modern touch to a design that stays true to traditional timepieces the Galaxy watch 6 starts at 299 dollars and the Galaxy watch 6 classic starts at 399 dollars you can get yours starting August 11th from sleep coaching to active heart monitoring Galaxy watch 6 series knows your health inside and out and provides intuitive insights it is the Ultimate Health wellness and style companion the Galaxy Tab S9 series sets the standard with a premium tablet experience should be providing Dynamic AMOLED 2x displays water and dust resistance and Powerful performance across the entire lineup the tab S9 series is powered by the Snapdragon 8 Gen 2 mobile platform for Galaxy as in our latest Flagship smartphone [Applause] tab S9 series Now features a thoughtfully redesigned structure for dispersing Heat it sends heat in two directions above the display and below the body and with the new Vapor chamber heat is carried through the thermal interface material or tin and spread widely across the surface which helps prevent sudden temperature spikes so even if you've been immersed in your tablet for a while it will maintain the powerful processing performance you need every design aspect of the tab S9 series design is intentional from the iconic camera layout to the redesign of the inner structure to allow for water and dust resistance we minimize the parts used and utilize a minute gap between the external surface glass and display to accommodate a new USBC port we've also applied a reverse Dome structure further protecting the tablet against water we did all of this without adding thickness and while maintaining the sleek and streamlined profile of the tab S9 series inside and out the tab S9 series is a testament to our design philosophy we're Aesthetics meet functionality the Galaxy Tab S9 series comes with our stunning display and inbox S Pen it is designed with your creativity in mind whether it's the apps you rely on or how they're supported by powerful performance you can choose from two colors are signature graphite or a new sophisticated beige tab S9 Ultra will be available for 1199 dollars tab S9 plus from 999 dollars and tab S9 from 799 dollars your inspiration deserves a new standard in premium tablets and pre-orders start today thank you for being part of this Samsung Galaxy homepage",
+        input_type: "article",
+        output_type: "json",
+        multilingual: {
+            enabled: true
+        },
+        steps: [
+            {
+                skill: "summarize"
+            },
+            {
+                skill: "highlights"
+            },
+            {
+                skill: "names"
+            },
+            {
+                skill: "headline"
+            }
+        ],
+    },
+};
+axios(config)
+    .then((response) => {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch((error) => {
+        console.log(error);
+    });
