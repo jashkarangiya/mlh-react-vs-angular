@@ -1,0 +1,16 @@
+.item {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+.property1default {
+  position: relative;
+  background-color: #fff;
+  width: 280px;
+  height: 44px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  font-family: Montserrat;
+}
