@@ -1,0 +1,48 @@
+.listboxbg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.chevronIcon {
+  position: absolute;
+  height: 10.67%;
+  width: 4.07%;
+  top: 45.5%;
+  right: 7.61%;
+  bottom: 43.83%;
+  left: 88.32%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.8;
+}
+.clipList,
+.listboxMain {
+  position: absolute;
+  height: 20.76%;
+  width: 90.91%;
+  top: 9.69%;
+  right: 4.55%;
+  bottom: 69.55%;
+  left: 4.55%;
+}
+.clipList {
+  height: 90.31%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.property1default {
+  position: relative;
+  width: 308px;
+  height: 289px;
+}

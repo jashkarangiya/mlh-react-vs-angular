@@ -1,0 +1,14 @@
+.selectLanguage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.placeholderText {
+  position: relative;
+  width: 184px;
+  height: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #666;
+  font-family: Montserrat;
+}
