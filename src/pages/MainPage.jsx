@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./MainPage.css";
 import VideoDetails from "../components/VideoDetails";
 import Transcript from "../Transcript";
@@ -57,6 +56,7 @@ export default function MainPage() {
     <div>
       <main id="div-main">
         <h2 className="insightfultube"> InsightfulTube </h2>{" "}
+<<<<<<< HEAD
         <form onChange={(e) => {
           e.preventDefault()
           setLink(e.target.value)
@@ -72,6 +72,30 @@ export default function MainPage() {
           />
         </form>
         <VideoDetails link={link} />
+=======
+        <input
+          className="inputField"
+          type="text"
+          placeholder="Copy and paste your YouTube link"
+        />
+        <div className="short-desc">
+          <p className="show-result">Showing results for</p>
+          <div className="show-result" style={{ display: "flex" }}>
+            <div style={{ flex: 1 }} className="img">
+              <img
+                src={imageUrl}
+                alt="Image"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="show-result" style={{ flex: 1 }}>
+              <h2 className="show-result">{title}</h2>
+              <p className="show-result">{time}</p>
+              <p className="show-result">{description}</p>
+            </div>
+          </div>
+        </div>
+>>>>>>> 5757f1b1ec4095251497e36892edbfe32b88c294
         <h2 className="chooseAnalysisType"> Choose analysis type </h2>{" "}
         <div className="buttonDiv">
           <button
@@ -106,7 +130,11 @@ export default function MainPage() {
             <button className="dropdown-button" onClick={handleDropdownToggle}>
               {selectedLanguage}
             </button>
+<<<<<<< HEAD
             <div className={`dropdown-options ${showOptions ? 'show' : ''}`}>
+=======
+            <div className={`dropdown-options ${showOptions ? "show" : ""}`}>
+>>>>>>> 5757f1b1ec4095251497e36892edbfe32b88c294
               <option value="Select Language" disabled>
                 Select Language
               </option>
