@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 
 import "./MainPage.css";
+import VideoDetails from "../components/VideoDetails";
+import Transcript from "../Transcript";
 
 export default function MainPage() {
   const [INFO, setInfo] = useState("");
+  const [link, setLink] = useState("");
   const handleButtonClick = (buttonName) => {
     // Simulating the content change based on the button clicked
     switch (buttonName) {
       case "Summary":
-        setInfo("This is the summary of the content.");
+        setInfo();
         break;
       case "Transcript":
-        setInfo("Here is the transcript of the audio/video content.");
+        setInfo(<Transcript link={link} />);
         break;
       case "Keyword":
         setInfo("These are the important keywords found on the page.");
@@ -54,28 +57,21 @@ export default function MainPage() {
     <div>
       <main id="div-main">
         <h2 className="insightfultube"> InsightfulTube </h2>{" "}
-        <input
-          className="inputField"
-          type="text"
-          placeholder="Copy and paste your YouTube link"
-        />
-        <div className="short-desc" >
-          <p className="show-result">Showing results for</p>
-          <div className="show-result" style={{ display: "flex"}}>
-            <div style={{ flex: 1 }} className="img">
-              <img
-                src={imageUrl}
-                alt="Image"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="show-result" style={{ flex: 1 }}>
-              <h2 className="show-result">{title}</h2>
-              <p className="show-result">{time}</p>
-              <p className="show-result">{description}</p>
-            </div>
-          </div>
-        </div>
+        <form onChange={(e) => {
+          e.preventDefault()
+          setLink(e.target.value)
+          // setLink(e.target.children)
+          // console.log(e.target.value)
+          console.log(link)
+        }}>
+          <input
+            className="inputField"
+            type="text"
+            placeholder="Copy and paste your YouTube link"
+
+          />
+        </form>
+        <VideoDetails link={link} />
         <h2 className="chooseAnalysisType"> Choose analysis type </h2>{" "}
         <div className="buttonDiv">
           <button
@@ -105,30 +101,30 @@ export default function MainPage() {
         </div>
         <div>{INFO && <p className="info">{INFO}</p>}</div>
         <div>
-      <p className="language-title">language</p>
-      <div className="dropdown-container">
-        <button className="dropdown-button" onClick={handleDropdownToggle}>
-          {selectedLanguage}
-        </button>
-        <div className={`dropdown-options ${showOptions ? 'show' : ''}`}>
-          <option value="Select Language" disabled>
-            Select Language
-          </option>
-          <option value="English" onClick={handleLanguageChange}>
-            English
-          </option>
-          <option value="Hindi" onClick={handleLanguageChange}>
-            Hindi
-          </option>
-          <option value="Gujarati" onClick={handleLanguageChange}>
-            Gujarati
-          </option>
-          <option value="Marathi" onClick={handleLanguageChange}>
-            Marathi
-          </option>
+          <p className="language-title">language</p>
+          <div className="dropdown-container">
+            <button className="dropdown-button" onClick={handleDropdownToggle}>
+              {selectedLanguage}
+            </button>
+            <div className={`dropdown-options ${showOptions ? 'show' : ''}`}>
+              <option value="Select Language" disabled>
+                Select Language
+              </option>
+              <option value="English" onClick={handleLanguageChange}>
+                English
+              </option>
+              <option value="Hindi" onClick={handleLanguageChange}>
+                Hindi
+              </option>
+              <option value="Gujarati" onClick={handleLanguageChange}>
+                Gujarati
+              </option>
+              <option value="Marathi" onClick={handleLanguageChange}>
+                Marathi
+              </option>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </main>
     </div>
   );
