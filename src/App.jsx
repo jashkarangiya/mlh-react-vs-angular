@@ -8,7 +8,7 @@ import {
 import MainPage from "./pages/MainPage";
 import HomePage from "./pages/homePage";
 import { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 import Transcript from "./Transcript";
 
 function App() {
@@ -49,9 +49,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Transcript />} />
+        {/* <Route path="/" element={<Transcript />} /> */}
         <Route path="/" element={<HomePage/>}></Route>
-        <Route path="/HaloBije" element={<MainPage />} />{" "}
+        <Route path="/HaloBije" element={<MainPage />} />{" "} 
       </Routes>{" "}
     </>
   );

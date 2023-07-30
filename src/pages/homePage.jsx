@@ -1,7 +1,7 @@
 import { Card } from "antd";
 import styles from "./homePage.module.css";
 import { Input } from "@chakra-ui/react";
-import { CardContent, Typography } from "@mui/material";
+// import { CardContent, Typography } from "@mui/material";
 import card1Img from "../assets/card1Img.png"
 import card2Img from "../assets/card2Img.png"
 import card3Img from "../assets/card3Img.png"
@@ -13,7 +13,7 @@ import MainPage from "./MainPage";
 const HomePage = () => {
   return (
     <main className={styles.homePage} id="div-m">
-      <h1 className={styles.insightfultube}> InsightfulTube </h1>{" "}
+      <h1 className={styles.insightfultubeLogo}> InsightfulTube </h1>{" "}
       {/* Code for input field:  */}
       <form>
       <Input
