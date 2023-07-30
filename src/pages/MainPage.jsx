@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./MainPage.css";
 
 export default function MainPage() {
@@ -59,9 +58,9 @@ export default function MainPage() {
           type="text"
           placeholder="Copy and paste your YouTube link"
         />
-        <div className="short-desc" >
+        <div className="short-desc">
           <p className="show-result">Showing results for</p>
-          <div className="show-result" style={{ display: "flex"}}>
+          <div className="show-result" style={{ display: "flex" }}>
             <div style={{ flex: 1 }} className="img">
               <img
                 src={imageUrl}
@@ -105,30 +104,30 @@ export default function MainPage() {
         </div>
         <div>{INFO && <p className="info">{INFO}</p>}</div>
         <div>
-      <p className="language-title">language</p>
-      <div className="dropdown-container">
-        <button className="dropdown-button" onClick={handleDropdownToggle}>
-          {selectedLanguage}
-        </button>
-        <div className={`dropdown-options ${showOptions ? 'show' : ''}`}>
-          <option value="Select Language" disabled>
-            Select Language
-          </option>
-          <option value="English" onClick={handleLanguageChange}>
-            English
-          </option>
-          <option value="Hindi" onClick={handleLanguageChange}>
-            Hindi
-          </option>
-          <option value="Gujarati" onClick={handleLanguageChange}>
-            Gujarati
-          </option>
-          <option value="Marathi" onClick={handleLanguageChange}>
-            Marathi
-          </option>
+          <p className="language-title">language</p>
+          <div className="dropdown-container">
+            <button className="dropdown-button" onClick={handleDropdownToggle}>
+              {selectedLanguage}
+            </button>
+            <div className={`dropdown-options ${showOptions ? "show" : ""}`}>
+              <option value="Select Language" disabled>
+                Select Language
+              </option>
+              <option value="English" onClick={handleLanguageChange}>
+                English
+              </option>
+              <option value="Hindi" onClick={handleLanguageChange}>
+                Hindi
+              </option>
+              <option value="Gujarati" onClick={handleLanguageChange}>
+                Gujarati
+              </option>
+              <option value="Marathi" onClick={handleLanguageChange}>
+                Marathi
+              </option>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </main>
     </div>
   );
