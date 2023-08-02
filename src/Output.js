@@ -68,13 +68,18 @@ function Output({ transcript }) {
 
     return (
         <div>
-            <button onClick={handelSubmit}>Give final summary</button>
-            {heading}
+            <h2>Heading</h2>
+            Tesla Solar Roof Review: Was it Worth It?
             <br />
-            {subHeading}
             <br />
+            <h2>Sub Heading</h2>
+            1 year with the Tesla solar roof
+            <br />
+            <br />
+            <h2>Products</h2>
             {product}
             <br />
+            <h2>Organizations</h2>
             {org}
         </div>
     )
